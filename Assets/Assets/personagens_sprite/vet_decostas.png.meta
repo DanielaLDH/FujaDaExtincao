@@ -1,70 +1,7 @@
 fileFormatVersion: 2
-guid: 9e19b3fe62c703c4489ee1409a5e9a9e
+guid: 23d744064fe0d4442b6769160904c570
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -1304740453005728069
-    second: rebeca walking sprite_0
-  - first:
-      213: 5732326413784383224
-    second: rebeca walking sprite_1
-  - first:
-      213: -1871428211836055211
-    second: rebeca walking sprite_2
-  - first:
-      213: 1087582008574567113
-    second: rebeca walking sprite_3
-  - first:
-      213: -1669306596700024261
-    second: rebeca walking sprite_4
-  - first:
-      213: -7417576809771621480
-    second: rebeca walking sprite_5
-  - first:
-      213: 7095717919998127327
-    second: rebeca walking sprite_6
-  - first:
-      213: -4052582132491753793
-    second: rebeca walking sprite_7
-  - first:
-      213: 7812382971141571625
-    second: rebeca walking sprite_8
-  - first:
-      213: 6341982180111703377
-    second: rebeca walking sprite_9
-  - first:
-      213: -8469686615550585455
-    second: rebeca walking sprite_10
-  - first:
-      213: 8691726050296018977
-    second: rebeca walking sprite_11
-  - first:
-      213: -8338280905009831668
-    second: rebeca walking sprite_12
-  - first:
-      213: 6839617709568417908
-    second: rebeca walking sprite_13
-  - first:
-      213: 1499637815705564819
-    second: rebeca walking sprite_14
-  - first:
-      213: 3614153298336509200
-    second: rebeca walking sprite_15
-  - first:
-      213: 8236931516169372793
-    second: rebeca walking sprite_16
-  - first:
-      213: 4241795337160154990
-    second: rebeca walking sprite_17
-  - first:
-      213: -5333037995404582327
-    second: rebeca walking sprite_18
-  - first:
-      213: -7640134312526725654
-    second: rebeca walking sprite_19
-  - first:
-      213: 6804453964530508988
-    second: rebeca walking sprite_20
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -144,7 +81,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: WebGL
+    buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -157,7 +94,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: Standalone
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -186,127 +123,127 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: rebeca walking sprite_0
+      name: vet_decostas_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 3
-        width: 390
-        height: 390
+        y: 1
+        width: 260
+        height: 354
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: bb6e2868871a4ede0800000000000000
-      internalID: -1304740453005728069
+      spriteID: b12cd2dfa6d4253408c588ad507115d7
+      internalID: -530816264
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rebeca walking sprite_1
+      name: vet_decostas_1
       rect:
         serializedVersion: 2
-        x: 390
-        y: 3
-        width: 390
-        height: 390
+        x: 260
+        y: 1
+        width: 260
+        height: 354
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8fef43e80805d8f40800000000000000
-      internalID: 5732326413784383224
+      spriteID: d6f63c7c1ff890e49bb410c6a6e1df2c
+      internalID: -766807737
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rebeca walking sprite_2
+      name: vet_decostas_2
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 1
+        width: 260
+        height: 354
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd2f7b7fbdca46b47b8080c1081c6322
+      internalID: -2128660503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vet_decostas_3
       rect:
         serializedVersion: 2
         x: 780
-        y: 3
-        width: 390
-        height: 390
+        y: 1
+        width: 260
+        height: 354
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 5511ed2e4f95706e0800000000000000
-      internalID: -1871428211836055211
+      spriteID: 9ea4ea8134283e1408ea0cf498aa0556
+      internalID: -119697265
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rebeca walking sprite_3
+      name: vet_decostas_4
       rect:
         serializedVersion: 2
-        x: 1170
-        y: 3
-        width: 390
-        height: 390
+        x: 1040
+        y: 1
+        width: 260
+        height: 354
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 9c26135131ed71f00800000000000000
-      internalID: 1087582008574567113
+      spriteID: 26ced2a7e52c0a548ae21c2710bf2154
+      internalID: 326159565
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rebeca walking sprite_4
+      name: vet_decostas_5
       rect:
         serializedVersion: 2
-        x: 1560
-        y: 3
-        width: 390
-        height: 390
+        x: 1300
+        y: 1
+        width: 260
+        height: 354
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b329a72ae7e65d8e0800000000000000
-      internalID: -1669306596700024261
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rebeca walking sprite_5
-      rect:
-        serializedVersion: 2
-        x: 1950
-        y: 3
-        width: 390
-        height: 390
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 893236701397f0990800000000000000
-      internalID: -7417576809771621480
+      spriteID: f46ec68364a2a6a47baa4d4c830243d0
+      internalID: 625762438
       vertices: []
       indices: 
       edges: []
@@ -314,7 +251,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 1900f5dc42ede7a4fbff6d97c3e19ff9
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -322,12 +259,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      rebeca walking sprite_0: -1304740453005728069
-      rebeca walking sprite_1: 5732326413784383224
-      rebeca walking sprite_2: -1871428211836055211
-      rebeca walking sprite_3: 1087582008574567113
-      rebeca walking sprite_4: -1669306596700024261
-      rebeca walking sprite_5: -7417576809771621480
+      vet_decostas_0: -530816264
+      vet_decostas_1: -766807737
+      vet_decostas_2: -2128660503
+      vet_decostas_3: -119697265
+      vet_decostas_4: 326159565
+      vet_decostas_5: 625762438
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
