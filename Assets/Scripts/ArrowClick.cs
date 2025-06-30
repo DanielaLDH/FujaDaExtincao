@@ -10,8 +10,13 @@ public class ArrowClick : MonoBehaviour
 
     public void OnMouseDown()
     {
+        StartCoroutine(Wait());
         SceneManager.LoadScene(newScene);
-        Debug.Log("foi");
+    }
+
+    IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(3f);
     }
 
     // Start is called before the first frame update

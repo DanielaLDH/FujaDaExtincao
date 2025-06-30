@@ -34,7 +34,6 @@ public class ListMissionsFalas : MonoBehaviour
             gameObjectFala.SetActive(true);
         }
         text.text = missionFalas[num];
-        Debug.Log(num);
     }
 
     public void ShowChar(int num)
@@ -43,4 +42,12 @@ public class ListMissionsFalas : MonoBehaviour
         character.sprite = charImages[num];
     }
 
+    public void HideCharandFala()
+    {
+        if (gameObjectFala != null)
+        {
+            gameObjectFala.SetActive(false);
+        }
+        
+    }
 }

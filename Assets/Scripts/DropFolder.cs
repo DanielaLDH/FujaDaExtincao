@@ -6,6 +6,7 @@ using UnityEngine.EventSystems;
 public class DropFolder : MonoBehaviour, IDropHandler
 {
     [SerializeField] int codigoFolder;
+    [SerializeField] PuzzleWin puzzleWin;
 
     public void OnDrop(PointerEventData eventData)
     {
@@ -16,6 +17,7 @@ public class DropFolder : MonoBehaviour, IDropHandler
             if (draggedCard.tipoAnimal == codigoFolder)
             {
                 draggedCard.gameObject.SetActive(false);
+                puzzleWin.WinVerfication();
             }
             else
             {

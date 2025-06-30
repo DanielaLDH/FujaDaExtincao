@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Tilemaps;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -22,13 +21,14 @@ public class Player : MonoBehaviour
     void Update()
     {
         OnClick();
+        sprite.sortingOrder = Mathf.RoundToInt(-transform.position.y * 100);
     }
 
     void OnClick()
     {
         if (canClick)
         {
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(0) && !UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject())
             {
                 targetPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
@@ -43,7 +43,17 @@ public class Player : MonoBehaviour
             {
                 sprite.flipX = false;
             }
-            if(targetPosition.x ==  transform.position.x && targetPosition.y == transform.position.y)
+            if (targetPosition.y > transform.position.y)
+            {
+                animator.SetBool("isBack", true);
+            }
+            else
+            {
+                animator.SetBool("isBack", false);
+            }
+
+
+            if (targetPosition.x ==  transform.position.x && targetPosition.y == transform.position.y)
             {
                 animator.SetBool("isWalking", false);
 

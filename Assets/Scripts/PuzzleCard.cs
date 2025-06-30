@@ -41,6 +41,8 @@ public class PuzzleCard : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDr
         rectTransform.anchoredPosition = startPosition;
     }
 
+
+
     // Start is called before the first frame update
     void Start()
     {
