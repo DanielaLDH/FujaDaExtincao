@@ -5,20 +5,22 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] GameObject fadeout;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     public void OnPlay()
     {
-        SceneManager.LoadScene(1);
+        Time.timeScale = 1f;
+        StartCoroutine(Fade());
+
     }
+
+    IEnumerator Fade()
+    {
+        fadeout.SetActive(true);
+        yield return new WaitForSeconds(1f); // tempo da animação de fade
+        SceneManager.LoadScene(1);
+
+    }
+
 }

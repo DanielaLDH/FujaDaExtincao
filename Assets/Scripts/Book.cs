@@ -23,11 +23,6 @@ public class Book : MonoBehaviour
         manager = GameObject.Find("Manager").GetComponent<Manager>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 
     public void Glow(bool glow)
     {

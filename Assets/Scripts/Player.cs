@@ -5,11 +5,13 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     [SerializeField] float speed;
-    Vector2 targetPosition;
     [SerializeField] SpriteRenderer sprite;
     [SerializeField] Animator animator;
 
     bool canClick = true;
+    Vector2 targetPosition;
+    bool isBlocked = false;
+
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +28,7 @@ public class Player : MonoBehaviour
 
     void OnClick()
     {
+
         if (canClick)
         {
             if (Input.GetMouseButtonDown(0) && !UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject())
@@ -34,7 +37,10 @@ public class Player : MonoBehaviour
 
             }
             animator.SetBool("isWalking", true);
+
+
             transform.position = Vector2.MoveTowards(transform.position, targetPosition, Time.deltaTime * speed);
+
             if (targetPosition.x < transform.position.x)
             {
                 sprite.flipX = true;
@@ -73,4 +79,20 @@ public class Player : MonoBehaviour
             canClick = true;
         }
     }
+
+    public void StopImmediately()
+    {
+        targetPosition = transform.position;
+        animator.SetBool("isWalking", false);
+        animator.SetBool("isBack", false);
+    }
+
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        // Ao bater, cancela o movimento
+        targetPosition = transform.position;
+        animator.SetBool("isWalking", false);
+    }
+
 }

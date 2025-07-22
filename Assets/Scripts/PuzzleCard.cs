@@ -42,16 +42,4 @@ public class PuzzleCard : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDr
     }
 
 
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

@@ -10,6 +10,8 @@ public class NPC : MonoBehaviour
 
     [SerializeField] bool intection;
 
+    [SerializeField] Player player;
+
 
     private void OnMouseDown()
     {
@@ -17,7 +19,7 @@ public class NPC : MonoBehaviour
         {
             if (manager.numState == 5)
             {
-                manager.SignalEmitterNew();
+                StartCoroutine(Wait());
             }
         }
        
@@ -33,5 +35,12 @@ public class NPC : MonoBehaviour
     {
         sprite.sortingOrder = Mathf.RoundToInt(-transform.position.y * 100);
 
+    }
+
+    IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(1f);
+        manager.SignalEmitterNew();
+        player.StopImmediately();
     }
 }

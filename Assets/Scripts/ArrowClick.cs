@@ -7,27 +7,20 @@ using UnityEngine.SceneManagement;
 public class ArrowClick : MonoBehaviour
 {
     [SerializeField] int newScene;
+    [SerializeField] GameObject fadeout;
 
     public void OnMouseDown()
     {
         StartCoroutine(Wait());
+
         SceneManager.LoadScene(newScene);
     }
 
     IEnumerator Wait()
     {
-        yield return new WaitForSeconds(3f);
+        fadeout.SetActive(true);
+        yield return new WaitForSeconds(2f);
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
